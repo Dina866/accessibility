@@ -1,3 +1,262 @@
+/* ==========================================
+   Accessibility Widget
+   Коростишівський педагогічний фаховий коледж
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
+
+    font-family:Segoe UI,Arial,sans-serif;
+
+}
+
+/* Кнопка */
+
+.accessibility-button{
+
+    position:fixed;
+
+    right:20px;
+
+    top:120px;
+
+    width:58px;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#0d5c38;
+
+    color:white;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+    z-index:99999;
+
+}
+
+.accessibility-button:hover{
+
+    background:#13894f;
+
+    transform:scale(1.06);
+
+}
+
+/* Панель */
+
+.panel{
+
+    position:fixed;
+
+    right:-370px;
+
+    top:110px;
+
+    width:330px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.18);
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    z-index:99998;
+
+}
+
+/* відкриття */
+
+.panel.open{
+
+    right:90px;
+
+}
+
+/* Верх */
+
+.panel-header{
+
+    background:#0d5c38;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px;
+
+}
+
+.panel-header h2{
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+/* кнопка X */
+
+.close-button{
+
+    border:none;
+
+    background:none;
+
+    color:white;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+}
+
+/* тіло */
+
+.panel-body{
+
+    padding:18px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+/* Кнопки */
+
+.panel-body button{
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#edf8f1;
+
+    color:#145f3b;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    text-align:left;
+
+}
+
+.panel-body button:hover{
+
+    background:#d7f3e1;
+
+    transform:translateX(4px);
+
+}
+
+/* Нижня частина */
+
+.panel-footer{
+
+    background:#f7f7f7;
+
+    text-align:center;
+
+    padding:14px;
+
+    color:#666;
+
+    font-size:13px;
+
+    line-height:1.6;
+
+}
+
+/* Контраст */
+
+.high-contrast{
+
+    background:#000 !important;
+
+    color:#fff !important;
+
+}
+
+.high-contrast button{
+
+    background:#222 !important;
+
+    color:#fff !important;
+
+}
+
+/* Виділення посилань */
+
+.highlight-links a{
+
+    background:yellow;
+
+    color:#000 !important;
+
+    font-weight:bold;
+
+    padding:2px 4px;
+
+    border-radius:4px;
+
+}
+
+/* Адаптація */
+
+@media(max-width:768px){
+
+.panel{
+
+    width:95%;
+
+    right:-110%;
+
+    top:90px;
+
+}
+
+.panel.open{
+
+    right:2.5%;
+
+}
+
+.accessibility-button{
+
+    right:15px;
+
+    top:90px;
+
+}
 
 }
