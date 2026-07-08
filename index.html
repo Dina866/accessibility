@@ -1,10 +1,95 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+
     <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Доступність</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+
+<!-- Кнопка відкриття -->
+
+<button id="openPanel" class="accessibility-button"
+        aria-label="Відкрити панель доступності">
+
+    ♿
+
+</button>
+
+<!-- Панель -->
+
+<div id="panel" class="panel">
+
+    <div class="panel-header">
+
+        <h2>Доступність</h2>
+
+        <button id="closePanel"
+                class="close-button"
+                aria-label="Закрити">
+
+            ✕
+
+        </button>
+
+    </div>
+
+    <div class="panel-body">
+
+        <button id="increaseText">
+            🔍 Збільшити текст
+        </button>
+
+        <button id="decreaseText">
+            🔎 Зменшити текст
+        </button>
+
+        <button id="highContrast">
+            🌗 Високий контраст
+        </button>
+
+        <button id="normalContrast">
+            🌤 Звичайний контраст
+        </button>
+
+        <button id="highlightLinks">
+            🔗 Виділити посилання
+        </button>
+
+        <button id="readPage">
+            🔊 Озвучити сторінку
+        </button>
+
+        <button id="keyboardHelp">
+            ⌨ Гарячі клавіші
+        </button>
+
+        <button id="resetSettings">
+            ↺ Скинути налаштування
+        </button>
+
+    </div>
+
+    <div class="panel-footer">
+
+        Версія 1.0<br>
+
+        © Коростишівський педагогічний
+        фаховий коледж
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
